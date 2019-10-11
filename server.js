@@ -29,6 +29,7 @@ const JAVASCRIPT_PATH = staticify.getVersionedPath('/javascripts/application.js'
 // Define app views
 const APP_VIEWS = [
   path.join(__dirname, 'node_modules/govuk-frontend/govuk/'),
+  path.join(__dirname, 'node_modules/@ministryofjustice/frontend/moj/components/'),
   __dirname
 ]
 
