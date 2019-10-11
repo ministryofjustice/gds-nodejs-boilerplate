@@ -1,6 +1,31 @@
 {% from "components/footer/macro.njk" import govukFooter %}
+{% from 'header/macro.njk' import mojHeader %}
 
 {% extends "template.njk" %}
+
+{% block header %}
+  {{ mojHeader({
+    organisationLabel: {
+      text: 'Organisation name',
+      href: '#'
+    },
+    serviceLabel: {
+      text: 'Service name',
+      href: '#'
+    },
+    navigation: {
+      label: 'Account navigation',
+      items: [{
+        text: 'Account name',
+        href: '#',
+        active: true
+      }, {
+        text: 'Sign out',
+        href: '#'
+      }]
+    }
+  }) }}
+{% endblock %}
 
 {% block pageTitle %}MOJ Node.js boilerplate{% endblock %}
 
