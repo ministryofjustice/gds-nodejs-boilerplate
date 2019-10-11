@@ -28,13 +28,13 @@ const JAVASCRIPT_PATH = staticify.getVersionedPath('/javascripts/application.js'
 
 // Define app views
 const APP_VIEWS = [
-  path.join(__dirname, 'node_modules/govuk-frontend/'),
+  path.join(__dirname, 'node_modules/govuk-frontend/govuk/'),
   __dirname
 ]
 
 function initialiseGlobalMiddleware (app) {
   app.set('settings', { getVersionedPath: staticify.getVersionedPath })
-  app.use(favicon(path.join(__dirname, 'node_modules/govuk-frontend/assets/', 'images', 'favicon.ico')))
+  app.use(favicon(path.join(__dirname, 'node_modules/govuk-frontend/govuk/assets/', 'images', 'favicon.ico')))
   app.use(compression())
   app.use(staticify.middleware)
 

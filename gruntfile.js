@@ -33,6 +33,16 @@ module.exports = function (grunt) {
           dest: 'public/'
         }
       ]
+    },
+    govukFrontendAssets: {
+      files: [
+        {
+          expand: true,
+          cwd: 'node_modules/govuk-frontend/govuk/assets',
+          src: ['**/*'],
+          dest: 'public/assets'
+        }
+      ]
     }
   }
 
