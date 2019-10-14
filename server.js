@@ -35,7 +35,7 @@ const APP_VIEWS = [
 
 function initialiseGlobalMiddleware (app) {
   app.set('settings', { getVersionedPath: staticify.getVersionedPath })
-  app.use(favicon(path.join(__dirname, 'node_modules/govuk-frontend/govuk/assets/', 'images', 'favicon.ico')))
+  app.use(favicon(path.join(__dirname, 'common/assets/', 'images', 'favicon.ico')))
   app.use(compression())
   app.use(staticify.middleware)
 
