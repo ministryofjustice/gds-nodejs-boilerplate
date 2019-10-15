@@ -1,5 +1,5 @@
 {
-  "name": "gds-nodejs-boilerplate",
+  "name": "moj-nodejs-boilerplate",
   "description": "A Node.js project boilerplate for production apps",
   "version": "0.0.1",
   "private": true,
@@ -17,28 +17,28 @@
     "test": "standard && node ./node_modules/mocha/bin/mocha \"!(node_modules)/**/*+(.test|.tests)\".js"
   },
   "dependencies": {
-    "@ministryofjustice/frontend": "0.0.15-alpha",
+    "@ministryofjustice/frontend": "^0.0.16-alpha",
     "body-parser": "1.18.x",
     "compression": "^1.7.4",
     "express": "4.16.x",
     "govuk-frontend": "^3.3.0",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.15",
     "minimist": "1.2.x",
     "morgan": "1.9.x",
     "nunjucks": "^3.2.0",
-    "pino": "^5.12.2",
+    "pino": "^5.13.5",
     "serve-favicon": "^2.5.0",
-    "staticify": "^3.3.1",
+    "staticify": "^3.3.4",
     "throng": "4.0.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
     "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.3",
     "chokidar-cli": "latest",
     "envfile": "^3.0.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.5.1",
     "grunt": "^1.0.4",
     "grunt-babel": "^8.0.0",
     "grunt-browserify": "^5.3.0",
@@ -54,12 +54,12 @@
     "grunt-mocha-test": "^0.13.2",
     "grunt-nodemon": "0.4.x",
     "grunt-rewrite": "1.0.x",
-    "grunt-sass": "^3.0.2",
+    "grunt-sass": "^3.1.0",
     "mocha": "^6.2.1",
     "nock": "^10.0.6",
     "node-sass": "^4.12.0",
     "sass-lint": "^1.13.1",
-    "standard": "^13.0.2",
+    "standard": "^13.1.0",
     "supertest": "^4.0.2"
   }
 }
